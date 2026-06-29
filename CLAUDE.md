@@ -1,0 +1,1 @@
+When talking to me, sacrifice grammar for the sake of concision.
