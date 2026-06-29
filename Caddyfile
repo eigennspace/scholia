@@ -1,0 +1,13 @@
+your-domain.com {
+    reverse_proxy app:3000
+
+    header /uploads/* Cache-Control "public, max-age=31536000, immutable"
+    route /uploads/* {
+        root * /var/www/uploads
+        file_server
+    }
+
+    log {
+        output file /data/access.log
+    }
+}
